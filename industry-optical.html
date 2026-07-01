@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>光通訊精密車削零件｜建昶精機 Jian Chang</title>
+  <meta name="description" content="建昶精機專為光通訊產業提供 Ferrule、Adapter、Connector 等精密車削金屬件，外徑Ø0.7–20mm，公差±0.002mm，SUS316、SUS440C、黃銅均可量產。" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── Industry Hero ── */
+    .ind-hero {
+      background: linear-gradient(135deg, #0b1e36 0%, #0f4c81 60%, #1a6fb5 100%);
+      color: white;
+      padding: 80px 6% 70px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .ind-hero h1 { font-size: 44px; line-height: 1.15; margin: 0 0 16px; color: white; }
+    .ind-hero p { color: #bfdbfe; font-size: 18px; margin-bottom: 28px; }
+    .ind-hero-img {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 20px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.5);
+      font-size: 14px;
+      text-align: center;
+      padding: 24px;
+      gap: 10px;
+    }
+    .ind-hero-img .img-label { font-size: 12px; color: rgba(255,255,255,.3); }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+    .hero-tag {
+      background: rgba(255,255,255,.12);
+      color: #bfdbfe;
+      padding: 5px 14px;
+      border-radius: 99px;
+      font-size: 13px;
+      border: 1px solid rgba(255,255,255,.2);
+    }
+
+    /* ── Why section ── */
+    .why-row {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .why-row img, .why-row .img-placeholder {
+      border-radius: 18px;
+      width: 100%;
+    }
+    .check-list { list-style: none; padding: 0; margin: 0; }
+    .check-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--gray);
+      font-size: 15px;
+      display: flex;
+      gap: 10px;
+    }
+    .check-list li:last-child { border-bottom: none; }
+    .check-list li::before { content: "✓"; color: var(--blue); font-weight: 700; flex-shrink: 0; }
+
+    /* ── Parts table ── */
+    .parts-table { width: 100%; border-collapse: collapse; }
+    .parts-table th, .parts-table td {
+      padding: 13px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      font-size: 15px;
+    }
+    .parts-table th { background: #eaf2f8; color: var(--blue); font-size: 13px; }
+    .parts-table tr:last-child td { border-bottom: none; }
+    .parts-table tr:hover td { background: #f8fafc; }
+    .parts-table td:first-child { font-weight: 700; color: var(--dark); }
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 99px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .badge-high { background: #fef3c7; color: #92400e; }
+    .badge-med  { background: #dbeafe; color: #1e40af; }
+
+    /* ── Case cards ── */
+    .case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .case-card {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      background: white;
+    }
+    .case-photo {
+      height: 160px;
+      background: linear-gradient(145deg, #eaf2f8, #f8fafc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #94a3b8;
+      font-size: 13px;
+      text-align: center;
+      padding: 16px;
+    }
+    .case-body { padding: 18px; }
+    .case-body h4 { margin: 0 0 8px; color: var(--dark); font-size: 16px; }
+    .case-spec { font-size: 13px; color: var(--gray); line-height: 1.8; margin: 0 0 12px; }
+
+    /* ── Spec highlight ── */
+    .spec-highlights {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 32px;
+    }
+    .spec-hl {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+    }
+    .spec-hl strong { display: block; font-size: 28px; color: var(--blue); margin-bottom: 4px; }
+    .spec-hl span { font-size: 13px; color: var(--gray); }
+
+    /* ── Material table ── */
+    .mat-table { width: 100%; border-collapse: collapse; }
+    .mat-table th, .mat-table td {
+      padding: 11px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    .mat-table th { background: var(--dark); color: white; font-size: 13px; }
+    .mat-table tr:last-child td { border-bottom: none; }
+    .mat-table tr:hover td { background: #f8fafc; }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 820px; }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h4 { margin: 0 0 8px; color: var(--dark); font-size: 16px; }
+    .faq-item p { margin: 0; color: var(--gray); font-size: 15px; }
+
+    @media (max-width: 960px) {
+      .ind-hero, .why-row { grid-template-columns: 1fr; }
+      .ind-hero h1 { font-size: 32px; }
+      .case-grid { grid-template-columns: 1fr 1fr; }
+      .spec-highlights { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .ind-hero { padding: 44px 5% 36px; }
+      .ind-hero h1 { font-size: 26px; }
+      .ind-hero p { font-size: 15px; }
+      .case-grid { grid-template-columns: 1fr; }
+      .spec-highlights { grid-template-columns: 1fr 1fr; }
+    }
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html"><img src="images/logo-header.png" alt="建昶精機 Jianchang Precision Machinery"></a>
+  <nav>
+    <a href="capabilities.html">加工能力</a>
+    <a href="parts.html">產品案例</a>
+    <a href="industries.html" class="active">應用產業</a>
+    <a href="contact.html">聯絡我們</a>
+  </nav>
+  <a class="nav-cta" href="rfq.html">詢價 / RFQ</a>
+  <button class="nav-toggle" aria-label="開啟選單" onclick="document.querySelector('.mobile-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-nav">
+  <a href="capabilities.html">加工能力</a>
+  <a href="parts.html">產品案例</a>
+  <a href="industries.html">應用產業</a>
+  <a href="contact.html">聯絡我們</a>
+  <a href="rfq.html" class="mobile-cta">詢價 / RFQ</a>
+</div>
+
+<!-- ── Hero ── -->
+<div class="ind-hero">
+  <div>
+    <p style="color:#93c5fd; font-size:14px; margin-bottom:10px; font-weight:600;">
+      ← <a href="industries.html" style="color:#93c5fd; text-decoration:none;">應用產業</a>
+    </p>
+    <h1>光通訊精密<br>車削零件</h1>
+    <p>Fiber Ferrule、Adapter、Connector Housing……<br>光通訊元件的核心金屬件，需要 Ø0.7–5mm 超高同心度與 ±0.002mm 精密公差，是建昶最核心的量產專長之一。</p>
+    <div class="hero-tags">
+      <span class="hero-tag">Ø0.7–5mm</span>
+      <span class="hero-tag">±0.002mm</span>
+      <span class="hero-tag">SUS316 / SUS440C</span>
+      <span class="hero-tag">黃銅 C3604</span>
+      <span class="hero-tag">量產 10萬件起</span>
+    </div>
+    <div style="margin-top:28px; display:flex; gap:12px; flex-wrap:wrap;">
+      <a class="btn" href="rfq.html">上傳圖面詢價</a>
+      <a class="btn outline" style="background:transparent; color:white; border-color:rgba(255,255,255,.5);" href="#parts-list">查看零件清單</a>
+    </div>
+  </div>
+  <div class="ind-hero-img">
+    【主視覺照片】
+    <div class="img-label">建議：光纖接頭 Ferrule / Connector 金屬件特寫<br>白底，旁邊放 1mm 尺規對比</div>
+  </div>
+</div>
+
+<!-- ── 規格亮點 ── -->
+<section style="background:#f8fafc;">
+  <h2>光通訊零件加工規格</h2>
+  <p class="section-sub">針對光通訊產業對同心度、表面粗糙度與尺寸一致性的嚴苛要求，建昶以走心式車床量產實績回應。</p>
+  <div class="spec-highlights">
+    <div class="spec-hl"><strong>Ø0.7mm</strong><span>最小可加工外徑</span></div>
+    <div class="spec-hl"><strong>±0.002mm</strong><span>精密公差（Ferrule 標準）</span></div>
+    <div class="spec-hl"><strong>Ra 0.4</strong><span>最佳表面粗糙度</span></div>
+    <div class="spec-hl"><strong>100%</strong><span>全尺寸檢驗（可選）</span></div>
+  </div>
+</section>
+
+<!-- ── 為什麼光通訊找建昶 ── -->
+<section>
+  <div class="why-row">
+    <div>
+      <h2>為什麼光通訊廠商<br>選擇建昶？</h2>
+      <p class="section-sub">光通訊金屬件的加工難點，正是建昶走心式車床的強項。</p>
+      <ul class="check-list">
+        <li>Ferrule 外徑通常 Ø1.25–2.5mm，公差 ±0.001–0.003mm，走心式車床導套加工特性天生適合，圓度穩定、批次一致性高。</li>
+        <li>SUS316、SUS440C、黃銅 C3604 均有大量量產實績，不鏽鋼不鏽銹、黃銅易切削、440C 耐磨，視用途選材。</li>
+        <li>凸輪車床可承接月需求 10 萬件以上的成熟料號，節拍快、成本低、交期穩定。</li>
+        <li>可整合清洗、去毛邊、全尺寸抽檢或 100% 全檢，客戶收到即可直接組裝。</li>
+        <li>從 Ø0.7mm 的微型定位銷到 Ø20mm 的法蘭外殼，同一家供應商一次搞定，簡化供應鏈管理。</li>
+      </ul>
+    </div>
+    <div style="background:linear-gradient(145deg,#eaf2f8,#f8fafc); border-radius:18px; height:320px; display:flex; align-items:center; justify-content:center; color:#94a3b8; font-size:14px; text-align:center; padding:24px; border:1px solid var(--border);">
+      【工廠/設備照片】<br>走心式車床加工光通訊零件中<br><br>
+      <span style="font-size:12px;">建議：機台特寫 + 加工中鏡頭</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── 零件清單 ── -->
+<section id="parts-list" style="background:#f8fafc;">
+  <h2>光通訊常見車削零件清單</h2>
+  <p class="section-sub">以下為光通訊產業常見需要精密車削的金屬件，建昶均有加工能力，可依圖面來料或來圖委外製造。</p>
+
+  <div class="table-wrap"><table class="parts-table">
+    <thead>
+      <tr>
+        <th>零件名稱</th>
+        <th>英文名稱</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>光纖插心</td><td>Fiber Ferrule</td></tr>
+      <tr><td>對準套筒</td><td>Alignment Sleeve</td></tr>
+      <tr><td>連接器外殼</td><td>Connector Housing</td></tr>
+      <tr><td>適配器法蘭</td><td>Adapter Flange</td></tr>
+      <tr><td>光學鏡頭座</td><td>Optical Lens Holder</td></tr>
+      <tr><td>準直儀管</td><td>Collimator Tube</td></tr>
+      <tr><td>光隔離器外殼</td><td>Optical Isolator Housing</td></tr>
+      <tr><td>光耦合器套管</td><td>Coupler Sleeve</td></tr>
+      <tr><td>光衰減器外殼</td><td>Attenuator Housing</td></tr>
+      <tr><td>光纖端帽</td><td>Fiber Optic End Cap</td></tr>
+      <tr><td>旋轉光纖接頭</td><td>Fiber Optic Rotary Joint</td></tr>
+      <tr><td>波分複用器座</td><td>WDM Housing</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ── 加工案例 ── -->
+<section>
+  <h2>光通訊加工案例</h2>
+  <p class="section-sub">以下為建昶實際量產的光通訊相關零件案例（照片待替換）。</p>
+  <div class="case-grid">
+    <div class="case-card">
+      <div class="case-photo">【Ferrule 照片】<br>建議：顯微鏡特寫</div>
+      <div class="case-body">
+        <h4>FC Ferrule</h4>
+        <p class="case-spec">
+          材質：SUS440C<br>
+          規格：Ø2.5 × L10.5 mm<br>
+          公差：±0.001 mm（外徑）<br>
+          內孔：Ø126 μm<br>
+          月產量：50,000 pcs
+        </p>
+        <span class="tag">SUS440C</span>
+        <span class="tag">光通訊</span>
+        <span class="tag">精密研磨</span>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-photo">【Connector Housing 照片】</div>
+      <div class="case-body">
+        <h4>SC Connector Housing</h4>
+        <p class="case-spec">
+          材質：黃銅 C3604<br>
+          規格：依客戶圖面<br>
+          公差：±0.01 mm<br>
+          特徵：多段外徑、螺牙與連接特徵<br>
+          月產量：依訂單
+        </p>
+        <span class="tag">黃銅</span>
+        <span class="tag">螺牙</span>
+        <span class="tag">光通訊</span>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-photo">【Alignment Sleeve 照片】</div>
+      <div class="case-body">
+        <h4>Alignment Sleeve</h4>
+        <p class="case-spec">
+          材質：磷青銅<br>
+          規格：配合 FC/SC Ferrule（Ø2.5mm），依圖面<br>
+          公差：依客戶要求<br>
+          特徵：開縫型（Split Sleeve），縱向切槽<br>
+          月產量：依訂單
+        </p>
+        <span class="tag">磷青銅</span>
+        <span class="tag">高精度</span>
+        <span class="tag">光通訊</span>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-photo">【Lens Holder 照片】</div>
+      <div class="case-body">
+        <h4>Optical Lens Holder</h4>
+        <p class="case-spec">
+          材質：A6061-T6<br>
+          規格：依客戶圖面<br>
+          公差：±0.005 mm（內孔，依圖面）<br>
+          特徵：薄壁件，需特殊夾持治具<br>
+          月產量：依訂單
+        </p>
+        <span class="tag">6061</span>
+        <span class="tag">薄壁</span>
+        <span class="tag">光學</span>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-photo">【Adapter Flange 照片】</div>
+      <div class="case-body">
+        <h4>Adapter Flange</h4>
+        <p class="case-spec">
+          材質：黃銅 C3604（鍍鎳）<br>
+          規格：依客戶圖面（FC / SC / LC 各有不同）<br>
+          公差：±0.01 mm<br>
+          特徵：含外形特徵與螺紋，依接頭型式<br>
+          月產量：依訂單
+        </p>
+        <span class="tag">黃銅</span>
+        <span class="tag">鍍鎳</span>
+        <span class="tag">光通訊</span>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-photo">【Collimator Tube 照片】</div>
+      <div class="case-body">
+        <h4>Collimator Tube</h4>
+        <p class="case-spec">
+          材質：SUS304<br>
+          規格：依客戶圖面<br>
+          公差：依需求（通常 ±0.005–±0.01 mm）<br>
+          特徵：含螺牙或連接特徵，依圖面<br>
+          月產量：依訂單
+        </p>
+        <span class="tag">SUS304</span>
+        <span class="tag">長軸</span>
+        <span class="tag">光學</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 可用材質 ── -->
+<section style="background:#f8fafc;">
+  <h2>光通訊零件推薦材質</h2>
+  <p class="section-sub">各材質在光通訊零件的適用場景與特性比較。</p>
+  <div class="table-wrap"><table class="mat-table">
+    <thead>
+      <tr>
+        <th>材質</th>
+        <th>特性</th>
+        <th>適用零件</th>
+        <th>備註</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>SUS440C</strong></td>
+        <td>高硬度、耐磨、尺寸穩定性佳</td>
+        <td>Ferrule（主流選擇）</td>
+        <td>研磨後可達超精密公差</td>
+      </tr>
+      <tr>
+        <td><strong>SUS316 / 316L</strong></td>
+        <td>耐蝕性佳、生物相容</td>
+        <td>Ferrule、套筒、插心</td>
+        <td>適合高潔淨度環境</td>
+      </tr>
+      <tr>
+        <td><strong>黃銅 C3604</strong></td>
+        <td>易切削、導電性佳、成本低</td>
+        <td>Connector Housing、Adapter</td>
+        <td>通常鍍鎳或鍍金保護</td>
+      </tr>
+      <tr>
+        <td><strong>磷青銅</strong></td>
+        <td>彈性佳、耐疲勞</td>
+        <td>Alignment Sleeve（開縫型）</td>
+        <td>需縱切槽，有彈性夾持效果</td>
+      </tr>
+      <tr>
+        <td><strong>A6061-T6</strong></td>
+        <td>輕量、易加工、散熱好</td>
+        <td>Lens Holder、WDM Housing</td>
+        <td>通常陽極處理（黑色）</td>
+      </tr>
+      <tr>
+        <td><strong>SUS304</strong></td>
+        <td>耐蝕、強度佳、價格合理</td>
+        <td>Collimator Tube、結構件</td>
+        <td>光通訊次要結構件常用</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ── FAQ ── -->
+<section>
+  <h2>常見問題</h2>
+  <p class="section-sub">光通訊客戶詢價時最常問的問題。</p>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h4>你們能做到幾 μm 的公差？</h4>
+      <p>車削製程通常可達 ±2μm（±0.002mm）。如需更高精度（如 Ferrule 外徑 ±1μm），需搭配外圓研磨製程，我們可安排外包研磨並整合交貨，請在詢價時說明。</p>
+    </div>
+    <div class="faq-item">
+      <h4>Ferrule 你們自己做，還是外包陶瓷的？</h4>
+      <p>建昶負責金屬 Ferrule（不鏽鋼、黃銅類）的精密車削。陶瓷 Ferrule 屬於燒結成形製程，不在我們的服務範圍。若您有金屬外套管搭配陶瓷內插心的需求，金屬件部分我們可以承接。</p>
+    </div>
+    <div class="faq-item">
+      <h4>最小訂購量是多少？</h4>
+      <p>打樣與量產均無最小訂購量限制，歡迎從少量打樣開始合作，待確認品質與規格後再視需求安排量產。</p>
+    </div>
+    <div class="faq-item">
+      <h4>可以做 100% 全尺寸檢驗嗎？</h4>
+      <p>可以。光通訊件因公差嚴苛，我們建議關鍵尺寸（外徑、長度）全檢，其餘項目抽檢。如需完整全檢報告，請在詢價時說明，費用將列入報價。</p>
+    </div>
+    <div class="faq-item">
+      <h4>打樣到量產大概多久？</h4>
+      <p>打樣件：確認後 5–10 個工作天。量產首批：打樣確認後 15–25 個工作天（含治具製作）。後續穩定批次通常 10–15 個工作天。</p>
+    </div>
+    <div class="faq-item">
+      <h4>可以搭配鍍鎳、鍍金等表面處理嗎？</h4>
+      <p>可以安排外包電鍍並整合回來，常見有鍍鎳、鍍金、電拋光等。請在詢價時一併說明，我們會整合報價。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── 台灣光通訊產業地圖 ── -->
+<section style="background:#f8fafc;">
+  <h2>台灣光通訊產業 — 潛在合作廠商類型</h2>
+  <p class="section-sub">建昶的目標客戶不限於以下類別，凡有精密金屬車削需求的光通訊廠商，歡迎來圖評估。</p>
+  <div class="cards">
+    <div class="card">
+      <h3>光纖元件製造商</h3>
+      <p>生產 Ferrule、Connector、Adapter 的廠商，直接採購金屬件或委外加工。<br><br>代表類型：光纖接頭廠、被動元件廠</p>
+      <span class="tag">Ferrule</span><span class="tag">Adapter</span>
+    </div>
+    <div class="card">
+      <h3>光模組廠</h3>
+      <p>生產 QSFP、SFP、CFP 等光收發模組，內部有大量精密結構件需求。<br><br>代表類型：100G / 400G 光模組廠商</p>
+      <span class="tag">Lens Holder</span><span class="tag">Housing</span>
+    </div>
+    <div class="card">
+      <h3>光學設備商</h3>
+      <p>生產雷射器、光電測量儀器、光纖感測設備，需要客製化光學座與準直件。<br><br>代表類型：雷射廠、光電儀器廠</p>
+      <span class="tag">Collimator</span><span class="tag">Lens Holder</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<div class="cta-banner">
+  <h2>準備好詢價光通訊零件了嗎？</h2>
+  <p>上傳 PDF / STEP 圖面，或直接告知外徑、長度、材質與數量，<br>我們將在 24 小時內評估並回覆。</p>
+  <a class="btn" href="rfq.html">上傳圖面 / Upload Drawing</a>
+  <a class="btn outline" href="contact.html">直接聯絡我們</a>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <a class="logo" href="index.html"><img src="images/logo-footer-white.png" alt="建昶精機 Jianchang Precision Machinery"></a>
+    <p>JIAN CHANG PRECISION MACHINE CO., LTD.<br>Micro Precision CNC Swiss Turning in Taiwan<br>新北市樹林區光興街55號</p>
+  </div>
+  <div>
+    <h4>其他應用產業</h4>
+    <ul>
+      <li><a href="industry-optical.html">光通訊</a></li>
+      <li><a href="industries.html">半導體設備</a></li>
+      <li><a href="industries.html">醫療器材</a></li>
+      <li><a href="industries.html">航太</a></li>
+      <li><a href="industries.html">機器人自動化</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4>聯絡資訊</h4>
+    <ul>
+      <li><a href="tel:+886226896388">+886-2-2689-6388</a></li>
+      <li><a href="mailto:info@jianchangauto.com">info@jianchangauto.com</a></li>
+      <li><a href="https://line.me/ti/p/~dk800816" target="_blank" rel="noopener">LINE：dk800816</a></li>
+      <li><a href="contact.html">新北市樹林區光興街55號</a></li>
+      <li><a href="rfq.html">詢價 / RFQ</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  © 2025 建昶精機有限公司 JIAN CHANG PRECISION MACHINE CO., LTD. All rights reserved.
+</div>
+
+</body>
+</html>

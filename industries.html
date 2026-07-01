@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>應用產業 Industries｜建昶精機</title>
+  <meta name="description" content="建昶精機服務光通訊、醫療器材、半導體設備、航太、機器人自動化等需要微小精密車削零件的高附加價值產業。" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .ind-section {
+      padding: 50px 6%;
+      border-bottom: 1px solid var(--border);
+    }
+    .ind-section:last-of-type { border-bottom: none; }
+    .ind-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 48px;
+      align-items: start;
+      margin-top: 24px;
+    }
+    .ind-layout.reverse { grid-template-columns: 1.4fr 1fr; }
+    .ind-layout.reverse .ind-photo { order: -1; }
+    .ind-photo {
+      border-radius: 18px;
+      height: 260px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .ind-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .ind-content h3 { color: var(--blue); font-size: 22px; margin: 0 0 10px; }
+    .ind-content p { color: var(--gray); margin-bottom: 16px; }
+    .ind-content ul { padding-left: 20px; color: var(--gray); }
+    .ind-content ul li { margin-bottom: 6px; }
+    .priority-badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 99px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .priority-1 { background: #fef3c7; color: #92400e; }
+    .priority-2 { background: #dbeafe; color: #1e40af; }
+    .priority-3 { background: #d1fae5; color: #065f46; }
+    @media (max-width: 760px) {
+      .ind-layout, .ind-layout.reverse { grid-template-columns: 1fr; }
+      .ind-layout.reverse .ind-photo { order: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html"><img src="images/logo-header.png" alt="建昶精機 Jianchang Precision Machinery"></a>
+  <nav>
+    <a href="capabilities.html">加工能力</a>
+    <a href="parts.html">產品案例</a>
+    <a href="industries.html" class="active">應用產業</a>
+    <a href="contact.html">聯絡我們</a>
+  </nav>
+  <a class="nav-cta" href="rfq.html">詢價 / RFQ</a>
+  <button class="nav-toggle" aria-label="開啟選單" onclick="document.querySelector('.mobile-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-nav">
+  <a href="capabilities.html">加工能力</a>
+  <a href="parts.html">產品案例</a>
+  <a href="industries.html">應用產業</a>
+  <a href="contact.html">聯絡我們</a>
+  <a href="rfq.html" class="mobile-cta">詢價 / RFQ</a>
+</div>
+
+<div class="page-hero">
+  <h1>應用產業 Industries</h1>
+  <p>建昶的微小精密車削能力，特別適合以下需要高精度、特殊材質、微小尺寸零件的高附加價值產業。</p>
+</div>
+
+<!-- 光通訊 -->
+<div class="ind-section">
+  <h2>光通訊 Optical Communication</h2>
+  <div class="ind-layout">
+    <div>
+      <div class="ind-content">
+        <h3>為什麼選擇建昶？</h3>
+        <p>光通訊產業對零件尺寸與一致性的要求極為嚴格，建昶長年專注微小精密車削，具備穩定量產高精度光通訊金屬件的豐富實績。</p>
+        <h3>代表零件</h3>
+        <ul>
+          <li>Ferrule 相關金屬件</li>
+          <li>Connector 外殼與結構件</li>
+          <li>Adapter 定位件</li>
+          <li>光學模組用精密零件</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ind-photo"><img src="images/ind-optical.jpg" alt="光通訊光纖連接器產業" /></div>
+  </div>
+  <div style="margin-top:20px;">
+    <span class="tag">Ferrule</span><span class="tag">Adapter</span><span class="tag">Connector</span>
+    <span class="tag">SUS316</span><span class="tag">SUS440C</span><span class="tag">黃銅</span>
+  </div>
+</div>
+
+<!-- 半導體設備 -->
+<div class="ind-section" style="background:#f8fafc;">
+  <h2>半導體設備 Semiconductor Equipment</h2>
+  <div class="ind-layout reverse">
+    <div>
+      <div class="ind-content">
+        <h3>半導體設備的精密零件需求</h3>
+        <p>晶圓搬運、對位、固定相關設備，需要大量精密定位銷（PIN）、間距套（Spacer）、固定件，要求尺寸一致性極高。</p>
+        <p>建昶的 SKH9、SUS440C 等高硬度材料加工能力，及精密 PIN 量產實績，直接符合這個產業需求。</p>
+        <h3>代表零件</h3>
+        <ul>
+          <li>Wafer 治具定位 PIN</li>
+          <li>設備間距 Spacer</li>
+          <li>精密滑動導套</li>
+          <li>PCB 對位銷</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ind-photo"><img src="images/ind-semiconductor.jpg" alt="半導體設備晶圓製造產業" /></div>
+  </div>
+  <div style="margin-top:20px;">
+    <span class="tag">Positioning PIN</span><span class="tag">Spacer</span><span class="tag">Fixture Parts</span>
+    <span class="tag">SKH9</span><span class="tag">SUS440C</span><span class="tag">SUJ2</span>
+  </div>
+</div>
+
+<!-- 醫療器材 -->
+<div class="ind-section">
+  <h2>醫療器材 Medical Device</h2>
+  <div class="ind-layout">
+    <div>
+      <div class="ind-content">
+        <h3>醫療零件的嚴苛要求</h3>
+        <p>醫療器材零件需要生物相容材質（SUS316L、Titanium）、超高精度、表面清潔度，且通常為客製化小批量或高混少量訂單，正是建昶最擅長的服務型態。</p>
+        <h3>代表零件</h3>
+        <ul>
+          <li>內視鏡微型轉軸、PIN</li>
+          <li>手術器械精密軸心</li>
+          <li>植入物輔助零件</li>
+          <li>手持醫療器材金屬件</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ind-photo"><img src="images/ind-medical.jpg" alt="醫療器材手術器械產業" /></div>
+  </div>
+  <div style="margin-top:20px;">
+    <span class="tag">SUS316L</span><span class="tag">Titanium</span><span class="tag">Inconel</span>
+    <span class="tag">A286</span><span class="tag">微型 PIN</span><span class="tag">軸心</span>
+  </div>
+</div>
+
+<!-- 航太 -->
+<div class="ind-section" style="background:#f8fafc;">
+  <h2>航太 Aerospace</h2>
+  <div class="ind-layout reverse">
+    <div>
+      <div class="ind-content">
+        <h3>航太零件的高溫合金挑戰</h3>
+        <p>Inconel718、A286、Titanium 等高溫合金，是一般車床廠不願接的難加工材料。建昶具備這類材料的量產實績，適合航太供應鏈中的精密小零件需求。</p>
+        <h3>代表零件</h3>
+        <ul>
+          <li>Inconel 高溫螺柱、軸心</li>
+          <li>A286 緊固件</li>
+          <li>Titanium 結構件</li>
+          <li>無人機精密軸心</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ind-photo"><img src="images/ind-aerospace.jpg" alt="航太飛機引擎製造產業" /></div>
+  </div>
+  <div style="margin-top:20px;">
+    <span class="tag">Inconel 718</span><span class="tag">A286</span><span class="tag">Titanium</span>
+    <span class="tag">7075</span><span class="tag">高溫合金</span>
+  </div>
+</div>
+
+<!-- 機器人自動化 -->
+<div class="ind-section">
+  <h2>機器人與自動化 Robotics & Automation</h2>
+  <div class="ind-layout">
+    <div>
+      <div class="ind-content">
+        <h3>自動化設備的精密傳動需求</h3>
+        <p>機器人關節軸、精密傳動軸、連接件，需要高精度圓度與直線度，且長徑比通常較大，正是走心式車床的強項。</p>
+        <h3>代表零件</h3>
+        <ul>
+          <li>機器人關節軸心</li>
+          <li>滾珠螺桿附件</li>
+          <li>精密連接接頭</li>
+          <li>感測器固定座</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ind-photo"><img src="images/ind-robotics.jpg" alt="工業機器人自動化產業" /></div>
+  </div>
+  <div style="margin-top:20px;">
+    <span class="tag">SCM435</span><span class="tag">SCM440</span><span class="tag">SUS304</span>
+    <span class="tag">長軸</span><span class="tag">高精度</span>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <h2>找不到您的產業？</h2>
+  <p>只要您的零件在 Ø1–20mm 範圍內，無論哪個產業，歡迎來圖評估。</p>
+  <a class="btn" href="rfq.html">上傳圖面詢價</a>
+  <a class="btn outline" href="contact.html">直接聯絡</a>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <a class="logo" href="index.html"><img src="images/logo-footer-white.png" alt="建昶精機 Jianchang Precision Machinery"></a>
+    <p>JIAN CHANG PRECISION MACHINE CO., LTD.<br>Micro Precision CNC Swiss Turning in Taiwan</p>
+  </div>
+  <div>
+    <h4>服務項目</h4>
+    <ul>
+      <li><a href="capabilities.html">加工能力</a></li>
+      <li><a href="parts.html">產品案例</a></li>
+      <li><a href="industries.html">應用產業</a></li>
+      <li><a href="rfq.html">詢價</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4>聯絡資訊</h4>
+    <ul>
+      <li><a href="tel:+886226896388">+886-2-2689-6388</a></li>
+      <li><a href="mailto:info@jianchangauto.com">info@jianchangauto.com</a></li>
+      <li><a href="https://line.me/ti/p/~dk800816" target="_blank" rel="noopener">LINE：dk800816</a></li>
+      <li><a href="contact.html">新北市樹林區光興街55號</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  © 2025 建昶精機有限公司 JIAN CHANG PRECISION MACHINE CO., LTD. All rights reserved.
+</div>
+</body>
+</html>

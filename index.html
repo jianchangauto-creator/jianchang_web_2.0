@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>建昶精機｜Micro Precision CNC Swiss Turning in Taiwan</title>
+  <meta name="description" content="建昶精機專注 Ø1–20mm 微小精密車削零件，走心式車床與凸輪車床量產，適合 PIN、軸心、接頭、Spacer、光通訊、醫療器材、半導體設備。" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      padding: 80px 6%;
+      background: linear-gradient(135deg, #f8fafc 0%, #eaf2f8 100%);
+      align-items: center;
+    }
+    .hero h1 { font-size: 48px; line-height: 1.12; margin: 0 0 18px; }
+    .hero p { font-size: 19px; color: var(--gray); margin-bottom: 28px; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero-img {
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,.15);
+      min-height: 380px;
+    }
+    .hero-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .industries-strip {
+      background: var(--dark);
+      padding: 20px 6%;
+      display: flex;
+      gap: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .ind-item {
+      color: #9ca3af;
+      font-size: 14px;
+      padding: 6px 22px;
+      border-right: 1px solid #374151;
+    }
+    .ind-item:last-child { border-right: none; }
+    .ind-item strong { color: white; display: block; }
+    @media (max-width: 960px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 34px; }
+    }
+    @media (max-width: 640px) {
+      .hero { padding: 36px 5%; gap: 24px; }
+      .hero h1 { font-size: 26px; }
+      .hero p { font-size: 16px; margin-bottom: 20px; }
+      .hero-img { min-height: 220px; }
+      .hero-btns { flex-direction: column; }
+      .hero-btns .btn { text-align: center; }
+      .ind-item { padding: 6px 12px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html"><img src="images/logo-header.png" alt="建昶精機 Jianchang Precision Machinery"></a>
+  <nav>
+    <a href="capabilities.html">加工能力</a>
+    <a href="parts.html">產品案例</a>
+    <a href="industries.html">應用產業</a>
+    <a href="contact.html">聯絡我們</a>
+  </nav>
+  <a class="nav-cta" href="rfq.html">詢價 / RFQ</a>
+  <button class="nav-toggle" aria-label="開啟選單" onclick="document.querySelector('.mobile-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-nav">
+  <a href="capabilities.html">加工能力</a>
+  <a href="parts.html">產品案例</a>
+  <a href="industries.html">應用產業</a>
+  <a href="contact.html">聯絡我們</a>
+  <a href="rfq.html" class="mobile-cta">詢價 / RFQ</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div>
+    <h1>Micro Precision CNC Swiss Turning in Taiwan</h1>
+    <p>建昶精機專精微型精密車削零件 Ø0.7mm–Ø2mm——PIN、微型軸心、Ferrule 相關件、微型接頭，服務光通訊、醫療、半導體設備等高精度產業。</p>
+    <div class="hero-btns">
+      <a class="btn" href="rfq.html">Upload Drawing / 上傳圖面詢價</a>
+      <a class="btn outline" href="parts.html">查看加工案例</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="images/hero-machine.jpg" alt="建昶精機 CNC 走心式車床加工實景">
+  </div>
+</section>
+
+<!-- Industry strip -->
+<div class="industries-strip">
+  <div class="ind-item"><strong>光通訊</strong>Optical Comm.</div>
+  <div class="ind-item"><strong>醫療器材</strong>Medical Device</div>
+  <div class="ind-item"><strong>半導體設備</strong>Semiconductor</div>
+  <div class="ind-item"><strong>航太</strong>Aerospace</div>
+  <div class="ind-item"><strong>機器人自動化</strong>Robotics</div>
+</div>
+
+<!-- Capabilities overview -->
+<section>
+  <h2>加工能力 Capabilities</h2>
+  <div class="cards cards-2col" style="grid-template-columns: repeat(2, 1fr);">
+    <div class="card">
+      <h3>CNC Swiss Turning<br>走心式車床</h3>
+      <p>適合小外徑 Ø0.7–20mm 連續量產。</p>
+      <span class="tag">Micro Parts</span>
+      <span class="tag">Long Shaft</span>
+      <span class="tag">High Tolerance</span>
+    </div>
+    <div class="card">
+      <h3>Cam Automatic Lathe<br>凸輪自動車床</h3>
+      <p>適合成熟料號大批量生產，月產 10 萬件以上，節拍穩定、單件成本低。</p>
+      <span class="tag">Mass Production</span>
+      <span class="tag">Cost Efficiency</span>
+    </div>
+    <div class="card">
+      <h3>Centerless Grinding<br>無心研磨</h3>
+      <p>高精度外徑研磨，公差可達 ±0.0015mm，適合需要超精密尺寸的 PIN 類、軸心與定位件。</p>
+      <span class="tag">高精度</span>
+      <span class="tag">±0.0015mm</span>
+    </div>
+    <div class="card">
+      <h3>Post-Process Integration<br>後處理整合</h3>
+      <p>加工後可整合電鍍鎳、電鍍鋅、化學鎳、熱處理、研磨、白鐵鈍化、分料包裝，依訂單需求。</p>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:32px;">
+    <a class="btn outline" href="capabilities.html">加工能力詳細說明 →</a>
+  </div>
+</section>
+
+<!-- Featured parts -->
+<section class="dark">
+  <h2>代表產品案例</h2>
+  <div class="gallery">
+    <div class="photo">
+      <img src="images/0.7mm白鐵插銷.jpg" alt="0.7mm 白鐵插銷 Micro PIN SUS304" />
+      <div class="photo-sub">Micro PIN｜SUS304<br>Ø0.7mm</div>
+    </div>
+    <div class="photo">
+      <img src="images/2mm 316白鐵四角插銷.jpg" alt="2mm SUS316 四角插銷" />
+      <div class="photo-sub">Square PIN｜SUS316<br>Ø2mm</div>
+    </div>
+    <div class="photo">
+      <img src="images/1mm 黃銅止付螺絲.jpg" alt="1mm 黃銅止付螺絲 Brass Set Screw" />
+      <div class="photo-sub">Set Screw｜黃銅<br>Ø1mm</div>
+    </div>
+    <div class="photo">
+      <img src="images/3mm黃銅螺帽.jpg" alt="3mm 黃銅螺帽 Brass Hex Nut" />
+      <div class="photo-sub">Hex Nut｜黃銅<br>Ø3mm</div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:32px;">
+    <a class="btn" href="parts.html">查看全部案例 →</a>
+  </div>
+</section>
+
+<!-- Industries -->
+<section>
+  <h2>應用產業 Industries</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>光通訊 Optical Comm.</h3>
+      <p>光纖接頭 Ferrule、Adapter、Connector 金屬件，需要 Ø1–3mm 高同心度與精密公差。</p>
+      <span class="tag">Ferrule</span><span class="tag">Adapter</span><span class="tag">Connector</span>
+    </div>
+    <div class="card">
+      <h3>醫療器材 Medical Device</h3>
+      <p>內視鏡零件、微型軸心、手術器械零件，要求生物相容材質與超高公差一致性。</p>
+      <span class="tag">SUS316</span><span class="tag">Titanium</span><span class="tag">Inconel</span>
+    </div>
+    <div class="card">
+      <h3>半導體設備 Semiconductor</h3>
+      <p>定位銷 PIN、Spacer、治具零件，精密定位要求高，需 100% 尺寸管控。</p>
+      <span class="tag">Precision PIN</span><span class="tag">Spacer</span><span class="tag">Fixture Parts</span>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:32px;">
+    <a class="btn outline" href="industries.html">查看所有產業 →</a>
+  </div>
+</section>
+
+<!-- Background -->
+<section style="background:#f8fafc;">
+  <h2>加工背景</h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <h3>微型零件量產</h3>
+      <p>長達 38 年持續深耕走心式車床微小件。</p>
+    </div>
+    <div class="why-card">
+      <h3>可加工材料</h3>
+      <p>各式銅料、不鏽鋼、鋼材、鋁材、合金等均有量產實績。</p>
+    </div>
+    <div class="why-card">
+      <h3>後處理整合</h3>
+      <p>加工後可整合電鍍鎳、電鍍鋅、化學鎳、熱處理、研磨、白鐵鈍化、分料包裝，依訂單需求。</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<div class="cta-banner">
+  <h2>詢價 / RFQ</h2>
+  <p>上傳圖面（PDF / STEP）或說明外徑、材質、數量，24 小時內回覆。</p>
+  <a class="btn" href="rfq.html">上傳圖面 / Upload Drawing</a>
+  <a class="btn outline" href="contact.html">聯絡資訊</a>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <a class="logo" href="index.html"><img src="images/logo-footer-white.png" alt="建昶精機 Jianchang Precision Machinery"></a>
+    <p>JIAN CHANG PRECISION MACHINE CO., LTD.<br>Micro Precision CNC Swiss Turning in Taiwan<br>成立 1986 年｜新北市樹林區</p>
+  </div>
+  <div>
+    <h4>服務項目</h4>
+    <ul>
+      <li><a href="capabilities.html">CNC Swiss Turning</a></li>
+      <li><a href="capabilities.html">Cam Automatic Lathe</a></li>
+      <li><a href="capabilities.html">品檢與後處理</a></li>
+      <li><a href="parts.html">產品案例</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4>聯絡資訊</h4>
+    <ul>
+      <li><a href="tel:+886226896388">+886-2-2689-6388</a></li>
+      <li><a href="mailto:info@jianchangauto.com">info@jianchangauto.com</a></li>
+      <li><a href="https://line.me/ti/p/~dk800816" target="_blank" rel="noopener">LINE：dk800816</a></li>
+      <li><a href="contact.html">新北市樹林區光興街55號</a></li>
+      <li><a href="rfq.html">詢價 / RFQ</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  © 2025 建昶精機有限公司 JIAN CHANG PRECISION MACHINE CO., LTD. All rights reserved.
+</div>
+
+</body>
+</html>

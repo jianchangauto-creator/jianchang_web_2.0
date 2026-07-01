@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>詢價 Request a Quote｜建昶精機</title>
+  <meta name="description" content="建昶精機線上詢價：上傳圖面（PDF/STEP/JPG），填寫材質、數量、公差需求，24小時內回覆評估。" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .rfq-page { display: grid; grid-template-columns: 1fr 1.6fr; gap: 60px; align-items: start; }
+    .rfq-sidebar h3 { color: var(--blue); font-size: 18px; margin: 24px 0 8px; }
+    .rfq-sidebar h3:first-child { margin-top: 0; }
+    .rfq-sidebar p { color: var(--gray); font-size: 15px; margin: 0 0 8px; }
+    .rfq-sidebar ul { padding-left: 18px; color: var(--gray); font-size: 14px; }
+    .rfq-sidebar ul li { margin-bottom: 5px; }
+    .required { color: #ef4444; }
+    label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 5px; color: var(--dark); }
+    .field { margin-bottom: 4px; }
+    .success-msg {
+      display: none;
+      background: #d1fae5;
+      border: 1px solid #6ee7b7;
+      border-radius: 12px;
+      padding: 20px 24px;
+      color: #065f46;
+      margin-top: 16px;
+      font-size: 15px;
+    }
+    @media (max-width: 860px) { .rfq-page { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="index.html"><img src="images/logo-header.png" alt="建昶精機 Jianchang Precision Machinery"></a>
+  <nav>
+    <a href="capabilities.html">加工能力</a>
+    <a href="parts.html">產品案例</a>
+    <a href="industries.html">應用產業</a>
+    <a href="contact.html">聯絡我們</a>
+  </nav>
+  <a class="nav-cta" href="rfq.html">詢價 / RFQ</a>
+  <button class="nav-toggle" aria-label="開啟選單" onclick="document.querySelector('.mobile-nav').classList.toggle('open')"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-nav">
+  <a href="capabilities.html">加工能力</a>
+  <a href="parts.html">產品案例</a>
+  <a href="industries.html">應用產業</a>
+  <a href="contact.html">聯絡我們</a>
+  <a href="rfq.html" class="mobile-cta">詢價 / RFQ</a>
+</div>
+
+<div class="page-hero">
+  <h1>Request a Quote / 圖面詢價</h1>
+  <p>上傳圖面並填寫基本規格，我們將在 <strong>24 小時內</strong>評估加工可行性並回覆報價。</p>
+</div>
+
+<section>
+  <!-- Process steps -->
+  <div class="steps" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>填寫聯絡資料</h4>
+      <p>姓名、公司、Email 或 LINE</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>上傳圖面／說明規格</h4>
+      <p>PDF / STEP / JPG，或直接描述外徑、材質、數量</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>24hr 回覆</h4>
+      <p>或直接聯繫：<a href="https://line.me/ti/p/~dk800816" target="_blank" style="color:var(--blue);">LINE</a> ／ <a href="tel:+886226896388" style="color:var(--blue);">電話</a></p>
+    </div>
+  </div>
+
+  <div style="height:50px;"></div>
+
+  <div class="rfq-page">
+    <!-- Sidebar -->
+    <div class="rfq-sidebar">
+      <h3>詢價須知</h3>
+      <p>提供越詳細的資訊，我們越能快速回覆精準報價。</p>
+
+      <h3>建議提供的資訊</h3>
+      <ul>
+        <li>工程圖（2D PDF 或 3D STEP）</li>
+        <li>材質與熱處理要求</li>
+        <li>關鍵公差標注</li>
+        <li>年需求數量</li>
+        <li>表面處理（如有）</li>
+        <li>交期需求</li>
+      </ul>
+
+      <h3>我們擅長的零件類型</h3>
+      <ul>
+        <li>Ø1–20mm 精密車削件</li>
+        <li>長徑比大的細長軸</li>
+        <li>微小 PIN 與定位件</li>
+        <li>光通訊 Ferrule 相關件</li>
+        <li>不鏽鋼 / 鈦 / Inconel 難加工材</li>
+      </ul>
+
+      <h3>直接聯絡</h3>
+      <p>📞 <a href="tel:+886226896388" style="color:var(--blue);">+886-2-2689-6388</a></p>
+      <p>📧 <a href="mailto:info@jianchangauto.com" style="color:var(--blue);">info@jianchangauto.com</a></p>
+      <p style="font-size:13px; color:var(--gray);">週一至週五 08:00–17:30</p>
+    </div>
+
+    <!-- Ragic Form -->
+    <div>
+      <iframe
+        title="Ragic embedded form"
+        src="https://ap5.ragic.com/Jianchangauto/forms5/3?webview&webaction=form&ver=new&dfCheckbox"
+        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin allow-downloads"
+        style="border:1px solid var(--border); border-radius:18px; overflow-x:hidden; overflow-y:hidden; height:800px; width:100%;">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">
+    <a class="logo" href="index.html"><img src="images/logo-footer-white.png" alt="建昶精機 Jianchang Precision Machinery"></a>
+    <p>JIAN CHANG PRECISION MACHINE CO., LTD.<br>Micro Precision CNC Swiss Turning in Taiwan</p>
+  </div>
+  <div>
+    <h4>服務項目</h4>
+    <ul>
+      <li><a href="capabilities.html">加工能力</a></li>
+      <li><a href="parts.html">產品案例</a></li>
+      <li><a href="industries.html">應用產業</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4>聯絡資訊</h4>
+    <ul>
+      <li><a href="tel:+886226896388">+886-2-2689-6388</a></li>
+      <li><a href="mailto:info@jianchangauto.com">info@jianchangauto.com</a></li>
+      <li><a href="https://line.me/ti/p/~dk800816" target="_blank" rel="noopener">LINE：dk800816</a></li>
+      <li><a href="contact.html">新北市樹林區光興街55號</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  © 2025 建昶精機有限公司 JIAN CHANG PRECISION MACHINE CO., LTD. All rights reserved.
+</div>
+
+</body>
+</html>
