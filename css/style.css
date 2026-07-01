@@ -9,6 +9,7 @@
 }
 * { box-sizing: border-box; }
 body { margin: 0; font-family: Arial, "Noto Sans TC", sans-serif; color: var(--dark); line-height: 1.6; }
+img { -webkit-user-drag: none; user-drag: none; pointer-events: none; }
 
 /* ── Header ── */
 header {
