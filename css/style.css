@@ -51,6 +51,24 @@ nav a:hover, nav a.active { color: var(--blue); }
 }
 .nav-cta:hover { opacity: .88; }
 
+/* ── Language Switch ── */
+.lang-switch {
+  margin-left: 12px;
+  padding: 6px 14px;
+  border: 1.5px solid var(--blue);
+  border-radius: 6px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: .05em;
+  transition: all .2s;
+}
+.lang-switch:hover {
+  background: var(--blue);
+  color: white;
+}
+
 /* ── Buttons ── */
 .btn {
   display: inline-block;
@@ -325,6 +343,12 @@ footer ul li a:hover { color: white; }
   font-weight: 700;
   border: none !important;
 }
+.mobile-nav .lang-switch-mobile {
+  color: var(--blue) !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: .04em;
+}
 
 /* ── Responsive ── */
 @media (max-width: 960px) {
@@ -332,6 +356,7 @@ footer ul li a:hover { color: white; }
   .logo img { height: 124px; }
   .footer-brand .logo img { height: 20px; }
   .nav-cta { display: none; }
+  .lang-switch { display: none; }
   nav { display: none; }
   .nav-toggle { display: flex; }
   .cards, .gallery, .steps, .why-grid { grid-template-columns: 1fr 1fr; }
